@@ -1,0 +1,194 @@
+:root {
+    --the_blue_color : #186BBE;
+    --the_orange_color : #BC771D;
+    --the_gray_color : gray;
+}
+
+
+.navigation {
+    position : relative;
+    z-index: 100;
+}
+
+.companyLogo{
+    z-index: 120;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    position: relative;
+    height: 350px;
+    background-image: url("/joe-holland-80zZ1s24Nag-unsplash.jpg");
+    background-size: cover;
+    background-position: top ;
+    z-index : 100;
+}
+
+.bannerEffect {
+    width: 100%;
+    height: 100%;
+    background-color: var(--the_blue_color);
+    z-index: 100;
+}
+
+.bannerContent {
+    z-index: 300;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bannerContent div {
+    padding: 0% 7%;
+}
+.bannerContent h1 {
+    color: white;
+}
+
+.bannerContent div p {
+    color: white;
+}
+
+.bannerContent div p a {
+    text-decoration: none;
+    color:  white;
+}
+
+.bannerContent div p a:nth-child(1):hover {
+    color: #BC771D;
+}
+
+.bannerContent div p a:nth-child(2) {
+    color: #BC771D;
+    font-weight: 900;
+}
+
+.banner hr {
+    width: 70px;
+    height: 5px;
+    margin: 0;
+    background-color: #BC771D;
+    border: none;
+    margin: 10px 0;
+}
+
+
+.projectHeader h2 {
+    padding: 20px 8%;
+    color: var(--the_orange_color);
+}
+
+/*drops here*/
+
+.projects {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.column {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.columnImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.columnImage:hover {
+    cursor: pointer;
+}
+
+.closeColumnInformation {
+    position: fixed;
+    top: 25px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    z-index: 111111112;
+    color: white;
+    background-color: red;
+}
+
+.columnInformation {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 100vw;
+    right: 100px;
+    bottom: 100px;
+    height: 100vh;
+    z-index: 111111111;
+    clip-path: inset(100% 100% 100% 100%);
+    transition: clip-path 2s, top .5s , left .5s, right .5s, bottom .5s ;
+    background-color: white;
+}
+
+.columnImageCover{
+    width: 90%;
+    margin: 0px auto;
+    height: 90vh;
+    margin-top: 2.5%;
+    overflow-x: scroll;
+}
+
+.columnImageCover img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.flexthem {
+    display: flex;
+    gap: 20px;
+}
+
+.clipPathTransition {
+    clip-path: inset(0 0 0 0);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+  @media only screen and (max-width: 512px) {
+
+
+    .container {
+        height: 60vh;
+    }
+
+    .box:hover { 
+        flex: 1 1 70%; 
+    } 
+
+    .projects {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .column {
+        height: 250px;
+        margin-top: 20px;
+    }
+
+  }
+   
+

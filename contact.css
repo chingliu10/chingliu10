@@ -1,0 +1,93 @@
+:root {
+    --the_blue_color : #186BBE;
+    --the_orange_color : #BC771D;
+    --the_gray_color : gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    background-color: var(--the_blue_color);
+    padding: 20px 100px;
+}
+
+.companyLogo {
+    left : 100px;
+    top: 20px;
+}
+
+
+.active {
+    color: #BC771D !important;
+    font-weight: 700;
+    background-color: white;
+    padding: 2px 4px;
+}
+
+.contactMap iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.contactInformation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 10%;
+}
+
+
+.infoSection {
+    text-align: center;
+}
+
+.infoSection i , .infoSection h3 , .infoSection p {
+    margin-bottom: 10px;
+}
+
+.infoSection i , .infoSection span {
+    color: var(--the_blue_color);
+}
+
+.infoSection a {
+    color: var(--the_blue_color);
+}
+
+.infoSection i {
+    font-size: 1.5rem;
+}
+
+.contactMap {
+    height: 60vh;
+}
+
+
+@media (max-width: 512px) {
+    .contactInformation {
+        grid-template-columns: 1fr;
+        padding: 20px 2%;
+    }
+
+    .infoSection {
+        margin-bottom: 20px;
+    }
+    
+    .infoSection i {
+        font-size: 1.2rem;
+    }
+    
+    .contactMap {
+        height: 50vh;
+    }
+}
+
+
+
+
+
